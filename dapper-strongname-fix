@@ -1,0 +1,7 @@
+  <Target Name="StrongNameAlias" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)' == 'Dapper.StrongName'">
+        <Aliases>MP_DapperStrongNameAlias</Aliases>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
